@@ -6,7 +6,6 @@ struct Node {
 
     Node(int val) : data(val), next(nullptr) {}
 }; //This declares a struct named Node which represents a node in a linked list. It contains an integer data and a pointer next to the next node in the list. It also defines a constructor to initialize the data and next pointer of a node.
-
 bool searchRecursive(Node* head, int target) {
     if (head == nullptr)
         return false;
@@ -19,7 +18,6 @@ int main() {
     Node* head = new Node(1);
     head->next = new Node(2);
     head->next->next = new Node(3);
-
     int target = 2;
     if (searchRecursive(head, target))
         std::cout << "Element " << target << " is present in the linked list." << std::endl;
