@@ -9,7 +9,7 @@ struct Node {
               
 
 int findLengthIterative(Node* head) {
-    int length = 0;                      //This function findLengthIterative calculates the length of a linked list iteratively. It takes a pointer to the head of the list as input. It initializes a variable length to 0 and a pointer current to the head of the list. It then iterates through the list, incrementing the length for each node, until it reaches the end of the list (where current becomes nullptr). Finally, it returns the calculated length.
+    int length = 0;                     //This function findLengthIterative calculates the length of a linked list iteratively. It takes a pointer to the head of the list as input. It initializes a variable length to 0 and a pointer current to the head of the list. It then iterates through the list, incrementing the length for each node, until it reaches the end of the list (where current becomes nullptr). Finally, it returns the calculated length.
     Node* current = head;
     while (current != nullptr) {
         length++;
